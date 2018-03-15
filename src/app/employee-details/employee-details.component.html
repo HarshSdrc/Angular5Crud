@@ -1,0 +1,13 @@
+<div *ngIf="selectedEmployeee">
+  <h2>{{ selectedEmployeee.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedEmployeee.id}}</div>
+  <div><span>name: </span>{{selectedEmployeee.name}}</div>
+  <div><span>code: </span>{{selectedEmployeee.code}}</div>
+  
+  Edit Details
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedEmployeee.name" placeholder="name">
+    </label>
+  </div>
+  </div>
