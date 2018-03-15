@@ -18,7 +18,7 @@ export class RegisterComponent implements OnInit {
   }
 
   getEmployees() : void {
-    this.employees=this.employeeService.getEmployeeList();
+   this.employeeService.getEmployeeList().subscribe(employees => this.employees = employees);
   }
 
   selectedEmployeee: Employee;

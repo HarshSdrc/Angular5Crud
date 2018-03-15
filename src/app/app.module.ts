@@ -7,19 +7,22 @@ import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import {EmployeeServiceService} from './employee-service.service';
+import { CallSuccessComponent } from './call-success/call-success.component';
+import { CallSucessServiceService } from './call-sucess-service.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
-    EmployeeDetailsComponent
+    EmployeeDetailsComponent,
+    CallSuccessComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [EmployeeServiceService],
+  providers: [EmployeeServiceService, CallSucessServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
