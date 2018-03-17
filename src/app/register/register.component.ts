@@ -22,11 +22,11 @@ export class RegisterComponent implements OnInit {
    this.employeeService.getEmployeeList().subscribe(employees => this.employees = employees);
   }
 
-  selectedEmployeee: Employee;
+//   selectedEmployeee: Employee;
 
-onSelectEmployee(selectEmployeee: Employee): void {
-  this.callSucessServiceService.addMessage(selectEmployeee.name);
-  this.selectedEmployeee = selectEmployeee;
-}
+// onSelectEmployee(selectEmployeee: Employee): void {
+//   this.callSucessServiceService.addMessage(selectEmployeee.name);
+//   this.selectedEmployeee = selectEmployeee;
+// }
 
 }

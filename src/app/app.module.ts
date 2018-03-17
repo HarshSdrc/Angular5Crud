@@ -9,6 +9,8 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
 import {EmployeeServiceService} from './employee-service.service';
 import { CallSuccessComponent } from './call-success/call-success.component';
 import { CallSucessServiceService } from './call-sucess-service.service';
+import { AppRoutingModule } from './/app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -16,11 +18,13 @@ import { CallSucessServiceService } from './call-sucess-service.service';
     AppComponent,
     RegisterComponent,
     EmployeeDetailsComponent,
-    CallSuccessComponent
+    CallSuccessComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [EmployeeServiceService, CallSucessServiceService],
   bootstrap: [AppComponent]

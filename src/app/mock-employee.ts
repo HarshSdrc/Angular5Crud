@@ -16,5 +16,20 @@ import {Employee} from './employee'
       id : 3,
       name : 'Rishi',
       code : '1093'
+    },
+    {
+      id : 4,
+      name : 'Suman',
+      code : '1095'
+    },
+    {
+      id : 5,
+      name : 'Mona',
+      code : '1097'
+    },
+    {
+      id : 6 ,
+      name : 'Naseem',
+      code : '10912'
     }
   ]
