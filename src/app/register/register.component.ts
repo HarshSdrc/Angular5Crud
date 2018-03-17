@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import {Employee} from '../employee';
 import {EmployeeServiceService} from '../employee-service.service';
 import {CallSucessServiceService} from '../call-sucess-service.service';
@@ -11,6 +11,7 @@ import {CallSucessServiceService} from '../call-sucess-service.service';
 export class RegisterComponent implements OnInit {
 
   employees : Employee[];
+  @Input() newEmployee : Employee;
   constructor(private employeeService:EmployeeServiceService,private callSucessServiceService:CallSucessServiceService) { }
 
   ngOnInit() {
@@ -32,12 +33,4 @@ export class RegisterComponent implements OnInit {
         this.employees.push(employee);
       });
   }
-
-//   selectedEmployeee: Employee;
-
-// onSelectEmployee(selectEmployeee: Employee): void {
-//   this.callSucessServiceService.addMessage(selectEmployeee.name);
-//   this.selectedEmployeee = selectEmployeee;
-// }
-
 }

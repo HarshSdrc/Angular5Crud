@@ -3,9 +3,9 @@
 
 <div *ngIf="selectedEmployeee" class="data">
   <h2>{{ selectedEmployeee.name | uppercase}} Details</h2>
-  <div><span class="badge">id: </span><input [(ngModel)]="selectedEmployeee.id" placeholder="name" data-ng-disabled="true"/></div>
-  <div><span class="badge">name: </span><input [(ngModel)]="selectedEmployeee.name" placeholder="name"  data-ng-disabled="true"/></div>
-  <div><span class="badge">code: </span><input [(ngModel)]="selectedEmployeee.code" placeholder="name"  data-ng-disabled="true"/></div>
+  <div><span class="badge">id: </span><input [(ngModel)]="selectedEmployeee.id" placeholder="name" disabled /></div>
+  <div><span class="badge">name: </span><input [(ngModel)]="selectedEmployeee.name" placeholder="name" disabled /></div>
+  <div><span class="badge">code: </span><input [(ngModel)]="selectedEmployeee.code" placeholder="name"  disabled/></div>
   
   Edit Details
   <div>

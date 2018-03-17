@@ -9,5 +9,12 @@
 </ul>
 
 <!-- <app-employee-details [selectedEmployeee]="selectedEmployeee"></app-employee-details> -->
-<app-call-success></app-call-success>
+<!-- <app-call-success></app-call-success> -->
+
+New Employee Details
+<div>
+  <label>Name:  <input [(ngModel)]="newEmployee.name" placeholder="Employee name"></label>
+    <label>Code: <input [(ngModel)]="newEmployee.code" placeholder="Employee code"> </label>
+      <button (click)="addEmployee(newEmployee.name,newEmployee.code)">Add Employee</button>
+</div>
 
