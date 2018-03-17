@@ -3,10 +3,10 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class CallSucessServiceService {
 
-  message : string [] =[];
+  message : String [] =[];
   constructor() { }
 
-  addMessage(message :string)
+  addMessage(message :String)
   {
     this.message.push(message)
   }

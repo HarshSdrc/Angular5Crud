@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Employee} from '../employee';
 import {EmployeeServiceService} from '../employee-service.service';
+import {CallSucessServiceService} from '../call-sucess-service.service';
 
 @Component({
   selector: 'app-register',
@@ -10,7 +11,7 @@ import {EmployeeServiceService} from '../employee-service.service';
 export class RegisterComponent implements OnInit {
 
   employees : Employee[];
-  constructor(private employeeService:EmployeeServiceService) { }
+  constructor(private employeeService:EmployeeServiceService,private callSucessServiceService:CallSucessServiceService) { }
 
   ngOnInit() {
     this.getEmployees();
@@ -24,6 +25,7 @@ export class RegisterComponent implements OnInit {
   selectedEmployeee: Employee;
 
 onSelectEmployee(selectEmployeee: Employee): void {
+  this.callSucessServiceService.addMessage(selectEmployeee.name);
   this.selectedEmployeee = selectEmployeee;
 }
 

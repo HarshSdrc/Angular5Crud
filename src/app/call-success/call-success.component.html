@@ -1,8 +1,8 @@
-<div *ngIf="callSuccess.messages.length">
+<div *ngIf="callSuccess.message.length">
 
-  <h2>Messages</h2>
+  <h2>Employees Selected</h2>
   <button class="clear"
           (click)="callSuccess.clear()">clear</button>
-  <div *ngFor='let message of callSuccess.messages'> {{message}} </div>
+  <div *ngFor='let message of callSuccess.message'> {{message}} </div>
 
 </div>

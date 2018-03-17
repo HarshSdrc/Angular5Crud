@@ -11,6 +11,8 @@ export class CallSuccessComponent implements OnInit {
   constructor(public callSuccess:CallSucessServiceService) { }
 
   ngOnInit() {
+   
   }
+
 
 }
