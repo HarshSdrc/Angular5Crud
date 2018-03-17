@@ -9,8 +9,10 @@
   
   Edit Details
   <div>
-    <label>name:
-      <input [(ngModel)]="selectedEmployeee.name" placeholder="name">
+    <label>Name:  <input [(ngModel)]="selectedEmployeee.name" placeholder="name"></label>
+      <label>Code: <input [(ngModel)]="selectedEmployeee.code" placeholder="name">
     </label>
   </div>
+  <button (click)="updateEmployee()">Update</button>
+  <button (click)="deleteEmployee()">Delete Employee</button>
   </div>

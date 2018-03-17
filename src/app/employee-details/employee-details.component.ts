@@ -33,4 +33,13 @@ export class EmployeeDetailsComponent implements OnInit {
     this.location.back();
   }
 
+  updateEmployee(): void {
+    this.employeeServiceService.updateEmployee(this.selectedEmployeee)
+      .subscribe(() => this.goBack());
+  }
+
+  deleteEmployee():void
+  {
+    this.employeeServiceService.deleteEmployee(this.selectedEmployeee).subscribe(employee=>this.goBack());
+  }
 }

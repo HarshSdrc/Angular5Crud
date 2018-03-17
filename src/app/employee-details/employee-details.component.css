@@ -27,3 +27,12 @@ label {
     color: #ccc;
     cursor: auto;
   }
+  input{
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+  }
+  label
+  {
+      display:list-item;
+  }
