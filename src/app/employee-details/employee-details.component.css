@@ -1,5 +1,5 @@
 label {
-    display: inline-block;
+    display:list-item;
     width: 3em;
     margin: .5em 0;
     color: #607D8B;
@@ -30,9 +30,25 @@ label {
   input{
     background-color: #eeeeee;
     border: none;
-    border-radius: 10px 10px 10px 10px;
+
   }
-  label
+  .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #607D8B;
+    line-height: 1em;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+    min-width: 53px;
+    margin: 9px;
+  }
+
+  .data .input
   {
-      display:list-item;
+    margin-left: -6px;
   }

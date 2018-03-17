@@ -1,11 +1,11 @@
 
 <button (click)="goBack()">go back</button>
 
-<div *ngIf="selectedEmployeee">
+<div *ngIf="selectedEmployeee" class="data">
   <h2>{{ selectedEmployeee.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{selectedEmployeee.id}}</div>
-  <div><span>name: </span>{{selectedEmployeee.name}}</div>
-  <div><span>code: </span>{{selectedEmployeee.code}}</div>
+  <div><span class="badge">id: </span><input [(ngModel)]="selectedEmployeee.id" placeholder="name" data-ng-disabled="true"/></div>
+  <div><span class="badge">name: </span><input [(ngModel)]="selectedEmployeee.name" placeholder="name"  data-ng-disabled="true"/></div>
+  <div><span class="badge">code: </span><input [(ngModel)]="selectedEmployeee.code" placeholder="name"  data-ng-disabled="true"/></div>
   
   Edit Details
   <div>
