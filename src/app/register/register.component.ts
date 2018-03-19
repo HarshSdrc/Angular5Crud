@@ -15,6 +15,7 @@ export class RegisterComponent implements OnInit {
   constructor(private employeeService:EmployeeServiceService,private callSucessServiceService:CallSucessServiceService) { }
 
   ngOnInit() {
+    this.newEmployee=new Employee;
     this.getEmployees();
     
   }
@@ -24,7 +25,7 @@ export class RegisterComponent implements OnInit {
   }
 
 
-  add(name: String, code : String): void {
+  addEmployee(name: String, code : String): void {
     name = name.trim();
     code=code.trim();
     if (!name && !code) { return; }
@@ -32,5 +33,6 @@ export class RegisterComponent implements OnInit {
       .subscribe(employee => {
         this.employees.push(employee);
       });
+      this.newEmployee=new Employee;
   }
 }
